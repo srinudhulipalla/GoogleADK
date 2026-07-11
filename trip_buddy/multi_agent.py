@@ -1,10 +1,14 @@
 from google.adk import Agent, Workflow
+from google.genai import types
 
 # --- ROBOT 1: The Destination Picker ---
 destination_agent = Agent(
     name="DestinationPicker",
     model="gemini-3.1-flash-lite-preview",
-    instruction="Pick one random, beautiful travel destination in Karnataka. Return ONLY the name of the place and nothing else (like 'Hampi' or 'Coorg')."
+    instruction="Pick one random, beautiful travel destination in Karnataka. Return ONLY the name of the place and nothing else (like 'Hampi' or 'Coorg').",
+    
+    # temperature to 2.0 (maximum creativity) so it picks new places!
+    generate_content_config=types.GenerateContentConfig(temperature=2.0)
 )
 
 # --- ROBOT 2: The Packing Expert ---
@@ -15,8 +19,6 @@ packing_agent = Agent(
 )
 
 # --- THE BOSS: The Workflow ---
-# This connects our robots like a relay race!
-# It says: START the race -> go to DestinationPicker -> pass the baton to PackingExpert
 root_agent = Workflow(
     name="TeamTripBuddy",
     edges=[("START", destination_agent, packing_agent)]
