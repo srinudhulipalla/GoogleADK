@@ -2,7 +2,7 @@ import os
 from google.adk import Agent, Workflow
 from google.genai import types
 
-my_model = os.getenv("MODEL_NAME", "gemini-3.1-flash-lite-preview")
+my_model = os.getenv("MODEL_NAME")
 
 # --- THE SHARED BRAIN (State / Memory) ---
 whiteboard = {}

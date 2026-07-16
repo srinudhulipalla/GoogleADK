@@ -1,5 +1,8 @@
+import os
 from google.adk import Agent
 import urllib.request
+
+my_model = os.getenv("MODEL_NAME")
 
 # --- THIS IS OUR First TOOL --- 
 def calculate_driving_time(distance_km: int) -> str:
@@ -43,7 +46,7 @@ def save_itinerary_to_file(itinerary_text: str) -> str:
 # --- THIS IS OUR AGENT ---
 root_agent = Agent(
     name="RoadTripBuddy",
-    model="gemini-3.1-flash-lite-preview",
+    model=my_model,
     instruction="You are a fun travel assistant for family road trips in Karnataka. Keep your answers short and fun!",
     
     # We hand the tool to the robot right here!
