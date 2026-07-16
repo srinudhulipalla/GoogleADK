@@ -4,3 +4,4 @@ __pycache__/
 *.pyc
 .adk/
 **/.adk/
+robot_memory.json
