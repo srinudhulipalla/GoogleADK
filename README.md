@@ -54,6 +54,13 @@ All of the robot code is safely stored inside the `trip_buddy` folder. All of th
 | `level_01_03_multi_agent.py` | **The Team:** Making two robots pass messages like a relay race. |
 | `level_02_01_short_term_memory.py` | **The Whiteboard:** Teaching robots to save and read temporary memory. |
 | `level_02_02_long_term_memory.py` | **The Notebook:** Saving the AI's memory to a permanent hard drive file! |
+| `level_03_01_manager_agent.py` | **The Manager:** Dynamic routing to automatically hand off tasks to the right specialist. |
+| `level_04_01_human_in_loop.py` | **Safety First:** Forcing the AI to pause and ask for human approval before dangerous actions. |
+| `level_05_01_rag_basics.py` | **Open Book Test:** Teaching the AI to read a secret text file before answering. |
+| `level_05_02_smart_rag.py` | **The Librarian:** Keyword searching through massive text rulebooks. |
+| `level_05_03_csv_rag.py` | **The Data Analyst:** Reading structured rows and prices from a CSV spreadsheet. |
+| `level_05_04_folder_rag.py` | **The Detective:** Scanning an entire folder of files to combine clues into one answer. |
+| `level_05_05_sql_rag.py` | **The Database Admin:** Connecting the AI directly to a real local SQL database! |
 
 ---
 
