@@ -106,6 +106,6 @@ Level 6 doesn't use the terminal! It runs a live local web server.
 **Step 2:** Open your web browser and go to the **Swagger UI Developer Dashboard** to test your API directly:
 👉 `http://127.0.0.1:8000/docs`
 
-**Step 3 (The Frontend):** Double-click the `level_06_02_api_server_client.html` file in your main folder to open your custom chat UI in any browser!
+**Step 3 (The Frontend):** Double-click or open the `level_06_02_api_server_client.html` file in your main folder to open your custom chat UI in any browser!
 
 Say hello to your new AI buddies! 🎉

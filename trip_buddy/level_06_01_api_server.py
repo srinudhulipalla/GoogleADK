@@ -1,7 +1,7 @@
 import os
 import uuid
 from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware # 🚨 NEW: Imports the CORS tool
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from google.adk import Agent
 from google.adk.runners import InMemoryRunner
@@ -9,16 +9,16 @@ from google.genai import types
 
 app = FastAPI(title="Trip Buddy AI API")
 
-# 🚨 NEW: This tells the API to accept traffic from our local HTML file
+# This tells the API to accept traffic from our local HTML file
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # In a real enterprise app, you'd lock this down to your specific domain
+    allow_origins=["*"], # In a real enterprise app, add your specific domain here
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-my_model = os.getenv("MODEL_NAME", "gemini-3.1-flash-lite-preview")
+my_model = os.getenv("MODEL_NAME")
 
 web_agent = Agent(
     name="WebAgent",
