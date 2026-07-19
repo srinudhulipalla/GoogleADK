@@ -4,6 +4,8 @@ Welcome to AI learning repository!
 
 Imagine being able to build a team of tiny, invisible robots inside your computer. You can teach them to do math, search the live internet, and even talk to each other to solve puzzles for you. That is what **Agentic AI** is!
 
+This repository is intended for developers who want to learn Google ADK through small, independent, runnable examples rather than one large application.
+
 Here you can learn building these AI robots from scratch using the **Google Agent Development Kit (ADK)** in Python. I have saved every single step of chapter as a different "Level." 
 
 ---
