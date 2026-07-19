@@ -1,1 +1,1 @@
-from .level_05_01_rag_basics import root_agent
+from .level_05_02_smart_rag import root_agent
